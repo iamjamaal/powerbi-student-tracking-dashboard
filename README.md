@@ -156,6 +156,11 @@ This ensures:
 - **No circular dependencies** — the model has a clear directional flow from dimensions to facts.
 
 ---
+## DAX Measures
+
+Key DAX formulas used in the dashboard:
+
+```dax
 // Total Learners
 Total Learners = DISTINCTCOUNT(Learner_Dim[Learner_ID])
 
@@ -219,8 +224,7 @@ CALCULATE(
 // Total Hours Spent in Class
 Total Hours in Class = 
 DIVIDE(SUM(Attendance_Fact[Duration_Minutes]), 60, 0)
----
-
+```
 ## Dashboard Pages
 
 ### Page 1 — Overall Performance Metrics
