@@ -46,33 +46,6 @@ Program stakeholders need visibility into:
 
 ---
 
-## Data Sources
-
-### Source Directory Structure
-
-The raw data for this project is organized into the following directories:
-
-```
-├── Zoom Attendance/
-│   ├── Power BI/
-│   │   ├── Week 1/        # Daily attendance CSV files
-│   │   ├── Week 2/
-│   │   └── ... (Week 3 – Week 10)
-│   └── AWS Cloud/
-│       ├── Week 1/
-│       └── ... (Week 2 – Week 10)
-│
-├── Lab and Quizzes/
-│   ├── Power BI/           # Weekly lab & quiz grade files
-│   └── AWS Cloud/
-│
-├── Participation Records/
-│   ├── Power BI/           # Daily participation records per learner (10 weeks)
-│   └── AWS Cloud/
-│
-└── Status Records/
-    ├── Power BI/           # Certification & graduation status per learner
-    └── AWS Cloud/
 ```
 
 ### Data Descriptions
