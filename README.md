@@ -46,7 +46,7 @@ Program stakeholders need visibility into:
 
 ---
 
-```
+
 
 ### Data Descriptions
 
@@ -161,7 +161,7 @@ This ensures:
 
 Key DAX formulas used in the dashboard:
 
-```dax
+dax
 // Total Learners
 Total Learners = DISTINCTCOUNT(Learner_Dim[Learner_ID])
 
@@ -225,7 +225,7 @@ CALCULATE(
 // Total Hours Spent in Class
 Total Hours in Class = 
 DIVIDE(SUM(Attendance_Fact[Duration_Minutes]), 60, 0)
-```
+
 
 ---
 
