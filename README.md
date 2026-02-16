@@ -69,18 +69,18 @@ All data files were imported into Power BI using **Power Query Editor**. The fol
 
 2. **Column standardization** — Column names were cleaned and standardized across all source files to ensure consistency (e.g., unifying `Learner_Name`, `Email`, `Learner_ID` fields).
 
-3. **Data type corrections** — Fields were assigned appropriate data types:
+3. Data type corrections — Fields were assigned appropriate data types:
    - `Date` → Date type
    - `Duration_Minutes` → Whole Number
    - `Score` → Decimal Number
    - `Join_Time` / `Leave_Time` → Time type
 
-4. **Null and duplicate handling** — Rows with missing critical fields (e.g., Learner_ID, Date) were removed. Duplicate entries within the same session were deduplicated.
+4. Null and duplicate handling — Rows with missing critical fields (e.g., Learner_ID, Date) were removed. Duplicate entries within the same session were deduplicated.
 
-5. **Derived columns** — Calculated columns were created in Power Query:
-   - `is_Attended` — Boolean flag based on the 30-minute attendance rule (see below).
-   - `Cohort` — Extracted from the enrollment data or date ranges.
-   - `Track` — Derived from the source folder path (Power BI vs. AWS Cloud).
+5. Derived columns — Calculated columns were created in Power Query:
+   - is_Attended — Boolean flag based on the 30-minute attendance rule (see below).
+   - Cohort — Extracted from the enrollment data or date ranges.
+   - Track — Derived from the source folder path (Power BI vs. AWS Cloud).
 
 ### Attendance Rule
 
@@ -88,9 +88,8 @@ All data files were imported into Power BI using **Power Query Editor**. The fol
 
 This rule is applied consistently across all attendance calculations in both dashboard pages. The `is_Attended` column in the `Attendance_Fact` table encodes this logic:
 
-```
 is_Attended = Duration_Minutes > 30
-```
+
 
 Sessions where a learner connected but stayed for 30 minutes or less are excluded from attendance rate calculations.
 
