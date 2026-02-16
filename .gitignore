@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary scripts
+extract_pdf.py
+extract_docx.py
+check_images.py
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Power BI temp files
+*.tmp
