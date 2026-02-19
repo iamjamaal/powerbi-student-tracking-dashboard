@@ -337,7 +337,7 @@ Based on the dashboard analysis, the following insights were derived:
 - Despite lower engagement, AWS Cloud learners maintain competitive scores, indicating potential for improvement with better attendance.
 
 ### At-Risk Indicators
-## NOTE: This indicator was ignored in my analysis because low attendance or  low assessment scores didn't necessary equaled "At-Risk of Dropout"
+## NOTE:This indicator was excluded from the analysis because low attendance or assessment scores do not necessarily indicate a student is at risk of dropping out.
 - Learners with **low attendance AND low assessment scores** should be flagged for early intervention.
 - The table on Page 2 enables trainers to identify specific learners who need support through the conditional formatting — red bars indicate underperformance.
 
